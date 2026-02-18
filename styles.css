@@ -222,7 +222,7 @@ header.scrolled {
 }
 
 .hero h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     margin-bottom: 30px;
     font-weight: 500;
@@ -1583,4 +1583,5 @@ select {
     .post-image {
         height: 250px;
     }
+
 }
