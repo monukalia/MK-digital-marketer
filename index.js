@@ -264,48 +264,6 @@ window.addEventListener('scroll', () => {
 });
 
 // ==========================================
-// Back to Top Button
-// ==========================================
-const backToTop = document.createElement('button');
-backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
-backToTop.className = 'back-to-top';
-backToTop.style.cssText = `
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 1000;
-    transition: all 0.3s ease;
-`;
-
-document.body.appendChild(backToTop);
-
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        backToTop.style.display = 'flex';
-    } else {
-        backToTop.style.display = 'none';
-    }
-});
-
-backToTop.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-// ==========================================
 // Lazy Loading for Images
 // ==========================================
 const lazyImages = document.querySelectorAll('img[data-src]');
@@ -521,4 +479,5 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
+
 });
